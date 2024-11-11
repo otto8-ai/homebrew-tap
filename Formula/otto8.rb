@@ -5,20 +5,20 @@
 class Otto8 < Formula
   desc "Otto8 CLI"
   homepage "https://github.com/otto8-ai/otto8"
-  version "0.1.0-rc3"
+  version "0.1.0-rc4"
 
   on_macos do
     on_intel do
-      url "https://github.com/otto8-ai/otto8/releases/download/v0.1.0-rc3/otto8_v0.1.0-rc3_darwin_amd64.tar.gz"
-      sha256 "d91a1938f9408df9a9778c0e739e059f6fea0922e7ca124d45ba7165719a2234"
+      url "https://github.com/otto8-ai/otto8/releases/download/v0.1.0-rc4/otto8_v0.1.0-rc4_darwin_amd64.tar.gz"
+      sha256 "e0198a296a13ccac72e2e73ef5d6c41dbb47ea216803b812e6b23f21fad339fc"
 
       def install
         bin.install "otto8"
       end
     end
     on_arm do
-      url "https://github.com/otto8-ai/otto8/releases/download/v0.1.0-rc3/otto8_v0.1.0-rc3_darwin_arm64.tar.gz"
-      sha256 "8d70c4caca0be8def68c109bef612d51daf1392178425ad3de1333cec04727b6"
+      url "https://github.com/otto8-ai/otto8/releases/download/v0.1.0-rc4/otto8_v0.1.0-rc4_darwin_arm64.tar.gz"
+      sha256 "b16a42722dae092b33f6f5088c2d8df3949d9eacda04df340b15cee76a69e69e"
 
       def install
         bin.install "otto8"
@@ -29,8 +29,8 @@ class Otto8 < Formula
   on_linux do
     on_intel do
       if Hardware::CPU.is_64_bit?
-        url "https://github.com/otto8-ai/otto8/releases/download/v0.1.0-rc3/otto8_v0.1.0-rc3_linux_amd64.tar.gz"
-        sha256 "32e91dba844457a158c3c151471337d8208cffbfcc5901fb451be2db9ab24ebe"
+        url "https://github.com/otto8-ai/otto8/releases/download/v0.1.0-rc4/otto8_v0.1.0-rc4_linux_amd64.tar.gz"
+        sha256 "32d750a2fbfe288602dbc85ba1efe3f0348abca49b86f0356bc4bbae4858ebad"
 
         def install
           bin.install "otto8"
@@ -39,8 +39,8 @@ class Otto8 < Formula
     end
     on_arm do
       if Hardware::CPU.is_64_bit?
-        url "https://github.com/otto8-ai/otto8/releases/download/v0.1.0-rc3/otto8_v0.1.0-rc3_linux_arm64.tar.gz"
-        sha256 "81de5343e9e4973f9c89e4b4744043b128792671e3438e869d85551a9d90d46a"
+        url "https://github.com/otto8-ai/otto8/releases/download/v0.1.0-rc4/otto8_v0.1.0-rc4_linux_arm64.tar.gz"
+        sha256 "d66e856b5c61a2f9ccb5b8358dcdc81e68eb8888d4c5be7d785482f63d72a676"
 
         def install
           bin.install "otto8"
