@@ -5,20 +5,20 @@
 class Otto8 < Formula
   desc "Otto8 CLI"
   homepage "https://github.com/otto8-ai/otto8"
-  version "0.1.0-rc4"
+  version "0.1.0"
 
   on_macos do
     on_intel do
-      url "https://github.com/otto8-ai/otto8/releases/download/v0.1.0-rc4/otto8_v0.1.0-rc4_darwin_amd64.tar.gz"
-      sha256 "e0198a296a13ccac72e2e73ef5d6c41dbb47ea216803b812e6b23f21fad339fc"
+      url "https://github.com/otto8-ai/otto8/releases/download/v0.1.0/otto8_v0.1.0_darwin_amd64.tar.gz"
+      sha256 "21f8841faaeb63ee6f9f8d994b736ec1d8620998676d1380539629a98e622d1d"
 
       def install
         bin.install "otto8"
       end
     end
     on_arm do
-      url "https://github.com/otto8-ai/otto8/releases/download/v0.1.0-rc4/otto8_v0.1.0-rc4_darwin_arm64.tar.gz"
-      sha256 "b16a42722dae092b33f6f5088c2d8df3949d9eacda04df340b15cee76a69e69e"
+      url "https://github.com/otto8-ai/otto8/releases/download/v0.1.0/otto8_v0.1.0_darwin_arm64.tar.gz"
+      sha256 "bcd88b5ff552e3eb9174d5b8f6767a1efe80c85d51aedd0dc8d7cce9ad8a2f11"
 
       def install
         bin.install "otto8"
@@ -29,8 +29,8 @@ class Otto8 < Formula
   on_linux do
     on_intel do
       if Hardware::CPU.is_64_bit?
-        url "https://github.com/otto8-ai/otto8/releases/download/v0.1.0-rc4/otto8_v0.1.0-rc4_linux_amd64.tar.gz"
-        sha256 "32d750a2fbfe288602dbc85ba1efe3f0348abca49b86f0356bc4bbae4858ebad"
+        url "https://github.com/otto8-ai/otto8/releases/download/v0.1.0/otto8_v0.1.0_linux_amd64.tar.gz"
+        sha256 "a72bedb709b8ef145348e48dba9bbf08af811d8e7491f7614f72d783934fc674"
 
         def install
           bin.install "otto8"
@@ -39,8 +39,8 @@ class Otto8 < Formula
     end
     on_arm do
       if Hardware::CPU.is_64_bit?
-        url "https://github.com/otto8-ai/otto8/releases/download/v0.1.0-rc4/otto8_v0.1.0-rc4_linux_arm64.tar.gz"
-        sha256 "d66e856b5c61a2f9ccb5b8358dcdc81e68eb8888d4c5be7d785482f63d72a676"
+        url "https://github.com/otto8-ai/otto8/releases/download/v0.1.0/otto8_v0.1.0_linux_arm64.tar.gz"
+        sha256 "69288dc543ab0b6c9499989856933edbcb9bd5a08cd88e1fe44c1461245b71e7"
 
         def install
           bin.install "otto8"
